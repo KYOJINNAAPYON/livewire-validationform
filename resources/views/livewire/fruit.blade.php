@@ -5,8 +5,8 @@
                 <div>
                     <input wire:model="name" type="text">
                 </div>
-            <x-button>送信する</x-button>
- 
+            <button>送信する</button>
+
             @if (session()->has('message'))
             <div class="text-red-800">
                 {{ session('message') }}
