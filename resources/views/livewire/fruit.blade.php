@@ -4,6 +4,7 @@
             <div>
                 <div>
                     <input wire:model="name" type="text">
+                    @error('name') <span>{{ $message }}</span> @enderror
                 </div>
             <button>送信する</button>
 
