@@ -1,3 +1,18 @@
 <div>
-    {{-- Because she competes with no one, no one can compete with her. --}}
+    <form wire:submit.prevent="submit">
+        @csrf
+            <div>
+                <div>
+                    <input wire:model="name" type="text">
+                </div>
+            <x-button>送信する</x-button>
+ 
+            @if (session()->has('message'))
+            <div class="text-red-800">
+                {{ session('message') }}
+            </div>
+            @endif
+ 
+            </div>
+    </form>
 </div>

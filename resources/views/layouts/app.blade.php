@@ -35,4 +35,4 @@
         </div>
         @livewireScripts
     </body>
-</html>
+</html>　
